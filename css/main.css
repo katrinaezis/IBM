@@ -165,7 +165,7 @@ footer {
 		background-color: #F9F9FB;
 	}
 
-	.content > img {
+	.main-img {
 		width: 40%;
 		height: auto;
 		display: inline-block;
@@ -225,6 +225,25 @@ footer {
 
 	#footer {
 		width: 100%;
+	}
+
+}
+
+@media screen and (min-width: 1000px) {
+	body {
+		font-size: 18pt !important;
+	}
+
+	h2 {
+		font-size: 24pt !important;
+	}
+
+	h3 {
+		font-size: 22pt !important;
+	}
+
+	h4 {
+		font-size: 20pt !important;
 	}
 
 }
