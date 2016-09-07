@@ -139,6 +139,10 @@ li > a:hover {
 	padding: 0px;
 }
 
+.row > li {
+	text-align: center;
+}
+
 #sidebar {
 	background-color: #4178BE;
 	width: 100%;
