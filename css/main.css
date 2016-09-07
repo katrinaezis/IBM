@@ -1,0 +1,233 @@
+/*
+	Katrina Ezis
+	IBM FED Challenge
+*/
+
+/* Importing Raleway and Lato from Google fonts*/
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300italic,300);
+
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden;
+}
+
+body {
+	font-family: Lato, "Helvetica Neue", sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+
+.bold {
+	font-weight: bold;
+}
+
+.button {
+	border: 1px solid black;
+	padding: 2%;
+	padding-left: 3%;
+	padding-right: 3%;
+	display: inline-block;
+	cursor: pointer;
+	color: black;
+}
+
+.button:hover {
+	color: black;
+	background-color: #F9F9FB;
+}
+
+#footer, #heading {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+}
+
+#footer, #heading {
+	justify-content: center;
+	background-color: #F9F9FB;
+}
+
+
+
+#nav, #title, #footer-link-section, #footer-icons {
+	width: 100%;
+	text-align: center;
+}
+
+#heading {
+	border-bottom: 2px solid #9855D4;
+	padding-top: 1px;
+}
+
+#sidebar {
+	background-color: #ECF0F2;
+	width: 100%;
+	padding: 5%;
+}
+
+#head-content {
+	width: 80%;
+	margin: 4%;
+}
+
+.row {
+	padding: 0px;
+}
+
+#header-links, #sidebar-links, #footer-links {
+	list-style: none;
+}
+
+li > a{
+	text-decoration: none;
+	color: black;
+}
+
+
+li > a:hover {
+	text-decoration: none;
+	color: #9855D4;
+}
+
+#hero-content {
+	text-align: center;
+	width: 80%;
+	display: block;
+	margin: auto;
+	padding: 5%;
+}
+
+.content > img {
+	width: 100%;
+	max-height: 300px;
+}
+
+.content > p {
+	width: 80%;
+	display: block;
+	margin: auto;
+	padding-top: 25px;
+}
+
+.content {
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.content > p {
+	width: 75%;
+	display: block;
+	margin: auto;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+#sidebar-links > li {
+	margin: 10px;
+}
+
+#footer-icons {
+	text-align: center;
+}
+
+#footer-icons > a {
+	margin: 20px;
+}
+
+footer {
+	overflow: hidden;
+	font-size: 12px;
+	padding-top: 1em;
+	clear: both;
+}
+
+@media screen and (min-width: 480px) {
+
+	#heading, #footer {
+		flex-wrap: nowrap;
+	}
+
+	.content {
+		padding: 5%;
+		display: block;
+		margin: auto;
+		background-color: #F9F9FB;
+	}
+
+	.content > img {
+		width: 40%;
+		height: auto;
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: 5%;
+	}
+
+	.content > p {
+		width: 50%;
+		display: inline-block;
+		vertical-align: middle;
+		padding-left: 5%;
+	}
+
+	#sidebar {
+		float: left;
+		text-align: right;
+		width: 30%;
+		height: 100%;
+		padding-bottom: 500em;
+		margin-bottom: -500em;
+	}
+
+	#head-content {
+		float: right;
+		display: inline-block;
+		width: 60%;
+		padding: 0px;
+		padding-right: 5%;
+		padding-bottom: 500em;
+		margin-bottom: -500em;
+	}
+
+	#sidebar-head {
+		display: block;
+		overflow: hidden;
+		padding-bottom: 5%;
+
+	}
+
+	#footer-link-section {
+		width: 30%;
+		flex-direction: row;
+	}
+
+	#footer-links, #footer-icons {
+		flex: 1 auto;
+	}
+
+	#footer-icons {
+		text-align: right;
+		width: 100%;
+		/*vertical-align: middle;*/
+	}
+
+	#footer-links {
+		text-align: left;
+		width: 100%;
+	}
+
+	#footer {
+		width: 100%;
+		padding-top: 2%;
+		padding-bottom: 2%;
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+
+}
